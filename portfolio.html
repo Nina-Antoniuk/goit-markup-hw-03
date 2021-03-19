@@ -16,121 +16,176 @@
 
 <body>
   <header class="page-header">
-    <nav>
-      <a class="logo link" href="./"><span class="accent">web</span>studio</a>
+    <div class="header-conteiner conteiner">
+      <nav class="page-nav">
+        <a class="logo link" href="./"><span class="accent">web</span>studio</a>
   
-      <ul class="nav-list list">
-        <li><a class="link" href="./index.html">Студия</a> </li>
-        <li><a class="active link" href="./portfolio.html">Портфолио</a> </li>
-        <li><a class="link" href="">Контакты</a></li>
+        <ul class="nav-list list">
+          <li><a class="link" href="./index.html">Студия</a> </li>
+          <li><a class="link active" href="./portfolio.html">Портфолио</a> </li>
+          <li><a class="link" href="">Контакты</a></li>
+        </ul>
+      </nav>
+  
+      <ul class="header-contacts list">
+        <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
-    </nav>
-  
-    <ul class="header-contacts list">
-      <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-      <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-    </ul>
+    </div>
   </header>
 
   <main>
-    <section>
-      <h1 class="section-title visually-hidden">Портфолио</h1>
+    <section class="section">
+      <div class="conteiner">
+        <h1 class="section-title visually-hidden">Портфолио</h1>
+        
+        <!-- filter list -->
+        <ul class="filter-list list">
+          <li><button class="btn" type="button">Все</button></li> <!-- :active, :focus-->
+          <li><button class="btn" type="button">Веб-сайты</button></li>
+          <li><button class="btn" type="button">Приложения</button></li>
+          <li><button class="btn" type="button">Дизайн</button></li>
+          <li><button class="btn" type="button">Маркетинг</button></li>
+        </ul>
+        
+        <!-- works examples list -->
+        <ul class="works-list grid list">
+          
+          <li class="works-item grid-item">
+            <a class="link" href="">
+              <div class="image-wrapp">
+                <img class="img" src="./images/portfolio/technokryak.jpg" width="370" height="295" alt="">
+              </div>
 
-      <!-- filter list -->
-      <ul class="filter-list list">
-        <li><button class="btn" type="button">Все</button></li> <!-- :active, :focus-->
-        <li><button class="btn" type="button">Веб-сайты</button></li>
-        <li><button class="btn" type="button">Приложения</button></li>
-        <li><button class="btn" type="button">Дизайн</button></li>
-        <li><button class="btn" type="button">Маркетинг</button></li>
-      </ul>
-      
-      <!-- work examples list -->
-      <ul class="examples-list list">
-        <li>
-          <a href="">
-            <img src="./images/portfolio/technokryak.jpg" width="370" height="295" alt="">
-            <h2 class="example-item">Технокряк</h2>
-            <p class="product-type">Веб-сайт</p>
-          </a>
-        </li>
+              <div class="card-content">
+                <h2 class="works-item-title">Технокряк</h2>
+                <p class="product-type">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+        
+          <li class="works-item grid-item">
+            <a class="link" href="">
+              <div class="image-wrapp">
+                <img class="img" src="./images/portfolio/poster.jpg" width="370" height="295" alt="">
+              </div>
 
-        <li>
-          <a href="">
-            <img src="./images/portfolio/poster.jpg" width="370" height="295" alt="">
-            <h2 class="example-item">Постер New Orlean vs Golden Star</h2>
-            <p class="product-type">Дизайн</p>
-          </a>
-        </li>
+              <div class="card-content">
+                <h2 class="works-item-title">Постер New Orlean vs Golden Star</h2>
+                <p class="product-type">Дизайн</p>
+              </div>
+            </a>
+          </li>
+        
+          <li class="works-item grid-item">
+            <a class="link" href="">
+              <div class="image-wrapp">
+                <img class="img" src="./images/portfolio/sea-food.jpg" width="370" height="295" alt="Ресторан Seafood">
+              </div>
 
-        <li>
-          <a href="">
-            <img src="./images/portfolio/sea-food.jpg" width="370" height="295" alt="Ресторан Seafood">
-            <h2 class="example-item">Ресторан Seafood</h2>
-            <p class="product-type">Приложение</p>
-          </a>
-        </li>
+              <div class="card-content">
+                <h2 class="works-item-title">Ресторан Seafood</h2>
+                <p class="product-type">Приложение</p>
+              </div>
+            </a>
+          </li>
+        
+          <li class="works-item grid-item">
+            <a class="link" href="">
+              <div class="image-wrapp">
+                <img class="img" src="./images/portfolio/prime.jpg" width="370" height="295" alt="">
+              </div>
 
-        <li>
-          <a href="">
-            <img src="./images/portfolio/prime.jpg" width="370" height="295" alt="">
-            <h2 class="example-item">Проект Prime</h2>
-            <p class="product-type">Маркетинг</p>
-          </a>
-        </li>
+              <div class="card-content">
+                <h2 class="works-item-title">Проект Prime</h2>
+                <p class="product-type">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+        
+          <li class="works-item grid-item">
+            <a class="link" href="">
+              <div class="image-wrapp">
+                <img class="img" src="./images/portfolio/boxes.jpg" width="370" height="295" alt="">
+              </div>
 
-        <li>
-          <a href="">
-            <img src="./images/portfolio/boxes.jpg" width="370" height="295" alt="">
-            <h2 class="example-item">Проект Boxes</h2>
-            <p class="product-type">Приложение</p>
-          </a>
-        </li>
+              <div class="card-content">
+                <h2 class="works-item-title">Проект Boxes</h2>
+                <p class="product-type">Приложение</p>
+              </div>
+            </a>
+          </li>
+        
+          <li class="works-item grid-item">
+            <a class="link" href="">
+              <div class="image-wrapp">
+                <img class="img" src="./images/portfolio/inspiration.jpg" width="370" height="295" alt="">
+              </div>
 
-        <li>
-         <a href="">
-            <img src="./images/portfolio/inspiration.jpg" width="370" height="295" alt="">
-            <h2 class="example-item">Inspiration has no Borders</h2>
-            <p class="product-type">Веб-сайт</p>
-         </a>
-        </li>
+              <div class="card-content">
+                <h2 class="works-item-title">Inspiration has no Borders</h2>
+                <p class="product-type">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+        
+          <li class="works-item grid-item">
+            <a class="link" href="">
+              <div class="image-wrapp">
+                <img class="img" src="./images/portfolio/limited-edition.jpg" width="370" height="295" alt="">
+              </div>
 
-        <li>
-          <a href="">
-            <img src="./images/portfolio/limited-edition.jpg" width="370" height="295" alt="">
-            <h2 class="example-item">Издание Limited Edition</h2>
-            <p class="product-type">Дизайн</p></a>
-        </li>
+              <div class="card-content">
+                <h2 class="works-item-title">Издание Limited Edition</h2>
+                <p class="product-type">Дизайн</p>
+              </div>
+            </a>
+          </li>
+        
+          <li class="works-item grid-item">
+            <a class="link" href="">
+              <div class="image-wrapp">
+                <img class="img" src="./images/portfolio/lab.jpg" width="370" height="295" alt="">
+              </div>
 
-        <li>
-         <a href="">
-            <img src="./images/portfolio/lab.jpg" width="370" height="295" alt="">
-            <h2 class="example-item">Проект LAB</h2>
-            <p class="product-type">Маркетинг</p>
-         </a>
-        </li>
+              <div class="card-content">
+                <h2 class="works-item-title">Проект LAB</h2>
+                <p class="product-type">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+        
+          <li class="works-item grid-item">
+            <a class="link" href="">
+              <div class="image-wrapp">
+                <img class="img" src="./images/portfolio/growing-business.jpg" width="370" height="295" alt="">
+              </div>
 
-        <li>
-          <a href="">
-            <img src="./images/portfolio/growing-business.jpg" width="370" height="295" alt="">
-            <h2 class="example-item">Growing Business</h2>
-            <p class="product-type">Приложение</p>
-        </a>
-        </li>
-      </ul>
+              <div class="card-content">
+                <h2 class="works-item-title">Growing Business</h2>
+                <p class="product-type">Приложение</p>
+              </div>
+            </a>
+          </li>
+
+        </ul>
+      </div>
     </section>
 
   </main>
 
   <footer class="page-footer">
-    <a class="logo link" href="./"><span class="accent">web</span>studio</a>
-    <ul class="footer-contacts list">
-      <li>
-        <address>г. Киев, пр-т Леси Украинки, 26</address>
-      </li>
-      <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-      <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-    </ul>
+    <div class="conteiner">
+      <a class="logo link" href="./"><span class="accent">web</span>studio</a>
+  
+      <ul class="footer-contacts list">
+        <li>
+          <address>г. Киев, пр-т Леси Украинки, 26</address>
+        </li>
+        <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+      </ul>
+    </div>
   </footer>
 </body>
 
